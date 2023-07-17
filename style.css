@@ -1,0 +1,109 @@
+/* Added universal css */
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* common style */
+.btn-primary{
+    border-radius: 8px;
+background: #FF900E;
+padding: 20px 25px;
+border: none;
+color: #FFF;
+font-size: 1.25rem;
+font-weight: 600;
+cursor: pointer;
+
+}
+/* header csss */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 40px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+color: var(--dark-01, #131313);
+font-family: Work Sans;
+font-size:3rem;
+font-weight: 700;
+}
+nav >ul{
+   display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    
+    
+    
+    font-size: 1rem;
+    
+    font-weight: 500;
+    line-height: 26px; /* 144.444% */
+}
+nav li a{
+    text-decoration: none;
+    color: var(--dark-02, #424242);
+}
+/* banner-style */
+.banner-content{
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+.banner-title{
+    font-size: 4rem;
+    color: var(--dark-01, #131313);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.banner-description{
+    color: var(--dark-03, #727272);
+    margin-bottom: 20px;
+
+font-family: Work Sans;
+
+font-size: 1rem;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.banner img{
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+
+
+
+/* responsive style */
+@media screen and (max-width: 576px){
+    header{
+       
+      padding: 10px;
+    }
+       nav{
+        flex-direction: column;
+       }
+       nav >ul{
+        margin-top: 20px;
+       }
+     
+    }
+    @media screen and (max-width:992px) and (min-width:576px) {
+        header{
+       
+         padding: 40px;
+          }
+          nav{
+            flex-direction: column;
+           }
+           nav >ul{
+            margin-top: 20px;
+           }
+    }
