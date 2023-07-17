@@ -100,6 +100,7 @@ main{
 }
 .teams-content-des{
     margin: 25px 0px;
+    line-height: 1.5rem;
 }
 .qucik-list{
 color: var(--dark-03, #727272);
@@ -116,6 +117,54 @@ color: #FF900E;
 font-weight: 700;
 
 }
+/* features */
+.features{
+    margin-top: 7rem;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.feature-title{
+    padding-left: 24px;
+    border-left:5px solid #FF900E; 
+    margin-bottom: 40px;
+}
+.feature-card h4{
+    color: var(--dark-01, #131313);
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 20px;
+}
+.feature-card{
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+padding: 40px;
+margin: 20px 0px;
+}
+.ten-years{
+    border-radius: 8px;
+background: #FF900E;
+padding: 40px;
+width: 342px;
+text-align: center;
+}
+.ten-years h2{
+color: #FFF;
+font-size: 4rem;
+font-weight: 700;
+line-height: 70px; /* 107.692% */
+}
+.ten-years p{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
 /* facts style */
 .facts{
     margin:7rem 0rem;
@@ -131,7 +180,7 @@ font-weight: 700;
 color: var(--dark-03, #727272);
 font-weight: 400;
 margin-bottom: 60px;
-line-height:1.2rem; /* 162.5% */
+line-height:1.5rem; /* 162.5% */
 }
 .card{
     border-radius: 8px;
