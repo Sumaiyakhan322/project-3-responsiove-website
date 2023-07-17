@@ -91,6 +91,9 @@ main{
     grid-template-columns: repeat(2,1fr);
     gap:1.5rem;
 }
+.teams-img-conatiner img{
+    width: 100%;
+}
 .teams-content{
     padding: 0px 70px;
 }
@@ -124,6 +127,19 @@ font-weight: 700;
     gap: 100px;
     align-items: center;
 }
+.feature-card .facts-des{
+    margin: 0px;
+}
+.feature-content{
+    width: 40%;
+}
+
+.feature-img img{
+    margin-left: 60px;
+    height: 100%;
+    
+    
+}
 .feature-title{
     padding-left: 24px;
     border-left:5px solid #FF900E; 
@@ -151,6 +167,8 @@ background: #FF900E;
 padding: 40px;
 width: 342px;
 text-align: center;
+position: relative;
+bottom: 100px;
 }
 .ten-years h2{
 color: #FFF;
@@ -183,7 +201,7 @@ margin-bottom: 60px;
 line-height:1.5rem; /* 162.5% */
 }
 .card{
-    border-radius: 8px;
+border-radius: 8px;
 border: 1px solid #FF900E;
 text-align: center;
 padding: 40px 40px;
@@ -191,6 +209,7 @@ padding: 40px 40px;
 .card-img-conatiner{
     display: flex;
     justify-content: space-around;
+    
 }
 
 .card-title{
@@ -230,11 +249,11 @@ font-weight: 600;
 
 /* responsive style */
 @media screen and (max-width: 576px){
-    header,.card-img-conatiner,.facts{
+    header,.card-img-conatiner,.facts,.features{
        
       padding: 10px;
     }
-       nav,.team-conatiner,.card-img-conatiner,.sponsors-img-container{
+       nav,.team-conatiner,.card-img-conatiner,.sponsors-img-container,.features{
         flex-direction: column;
         
        }
@@ -251,6 +270,13 @@ font-weight: 600;
        .teams-img-conatiner img{
         width: 100%;
        }
+       
+       .feature-img img{
+        width: 100%;
+        
+       
+       }
+
      
      
         .teams-content{
@@ -262,17 +288,34 @@ font-weight: 600;
        .card-img-conatiner{
         gap: 20px;
        }
-    
+       .feature-img img{
+        margin: 0px;
+  }
+   
+    .feature-content{
+        width: 100%;
+    }
+    .feature-img{
+        width: 100%;
+    }
+    .ten-years{
+        bottom: 0px;
+        position: static;
+        max-width: 300px;
+        padding: 0;
+        display: none;
+    }
      
     }
     
     @media screen and (max-width:992px) and (min-width:576px) {
-        header{
+        header,.facts{
        
          padding: 40px;
           }
-          nav,.sponsors-img-container{
+          nav,.sponsors-img-container,.features,.card-img-conatiner{
             flex-direction: column;
+            
            }
            nav >ul{
             margin-top: 1.8rem;
@@ -283,6 +326,14 @@ font-weight: 600;
            }
            .teams-content{
             margin-bottom:1.5rem;
+           }
+           .feature-img img{
+                 margin: 0px;
+           }
+           
+           .ten-years{
+            max-width: 300px;
+            position: static;
            }
            
 
